@@ -16,7 +16,7 @@ section{
     margin-top: 100px;
 }
 nav, .banner {
-    margin-top: 60px;
+    margin-top: 50px;
 }  
 nav{
     display: flex;
@@ -53,14 +53,16 @@ nav span{
 }
 .banner{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0) 100%), url("Images/Group 13 (1) (1).png");
-    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: auto;
-    height: 500px;
     border-radius: 16px;
     text-align: center;
-    align-items: center;
-    
+    align-items: center; 
+}
+.banner-content{
+    padding-bottom: 106px;
 }
 .banner-title{
     color: white;
@@ -148,7 +150,9 @@ nav span{
     }
     .banner{
         margin-top: 17px;
-        max-height: 800px;
+    }
+    .banner-content{
+        padding-bottom: 32px;
     }
     .banner-title{
         padding-top: 32px;
