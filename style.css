@@ -12,7 +12,7 @@ header , main{
     max-width: 1170px;
     margin: 0 auto;
   }
-section{
+section, footer{
     margin-top: 100px;
 }
 nav, .banner {
@@ -36,7 +36,7 @@ nav ul li{
     font-size: 1.125rem;
     font-weight: 400;
   }
-nav span{
+span{
     color: var(--primary-color);
   }
 .logo{
@@ -163,11 +163,45 @@ nav span{
     overflow: hidden;
 }
 .popular-tour-video video{
-    width: 100%; /* Make the video fill the container */
-    height: 100%; /* Make the video fill the container */
-    border-radius: 10px; /* Set the border radius for the video */
-    object-fit: cover; /* Ensure the video covers the container */
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10px;
+    object-fit: cover;
     clip-path: inset(0 round 10px);
+}
+
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    width: 100%;
+    height: auto;
+}
+.footer-content{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 110px 0;
+}
+#bottom-logo{
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap:33px;
+    color: var(--secondary-color);
+    padding: 32px 0px 50px 0px;
+}
+footer hr{
+    opacity: 50%;
+}
+.footer-content h6{
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-top: 50px;
 }
 
 
@@ -253,6 +287,17 @@ nav span{
         font-size: 1.25rem;
     }
     .popular-tour-description{
-        font-size: 0.85;
+        font-size: 0.8rem;
+    }
+    .footer-content{
+        width: 85%;
+        padding: 57px 0px 31px 0px;
+    }
+    #bottom-logo{
+        font-size: 0.8rem;
+    }
+    #bottom-logo img{
+        width: 32px;
+        height: 32px;
     }
 }
