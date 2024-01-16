@@ -12,6 +12,9 @@ header , main{
     max-width: 1170px;
     margin: 0 auto;
   }
+section{
+    margin-top: 100px;
+}
 nav, .banner {
     margin-top: 60px;
 }  
@@ -46,16 +49,18 @@ nav span{
 
 .toggle-menu{
     display: none;
-    width: 50px;
-    height: 50px;
     align-items: center;
 }
 .banner{
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0) 100%), url("Images/Group 13 (1) (1).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
     height: 500px;
     border-radius: 16px;
     text-align: center;
     align-items: center;
+    
 }
 .banner-title{
     color: white;
@@ -124,6 +129,9 @@ nav span{
     nav ul{
         display: none;
     }
+    nav{
+        margin-top: 17px;
+    }
     .toggle-menu{
         display: flex;
     }
@@ -140,6 +148,7 @@ nav span{
     }
     .banner{
         margin-top: 17px;
+        max-height: 800px;
     }
     .banner-title{
         padding-top: 32px;
