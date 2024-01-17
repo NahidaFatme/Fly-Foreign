@@ -213,9 +213,38 @@ span{
 }
 .newsletter-image{
     text-align: right;
+    position: relative;
 }
 #newsletter-button{
     margin-top: 8px;
+}
+.save-up{
+    background-color: var(--primary-color);
+    width: 324px;
+    height: 120px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    /* padding: 10px 0px 10px 0px; */
+    position: absolute;
+    transform: rotate(-25deg);
+    right: 15px;
+    bottom: 65px;
+    z-index: 1;
+}
+.save-up h5,
+.save-up h2 {
+    margin: 0; 
+}
+
+.save-up h5 {
+    margin-top: 30px;
+    font-size: 1rem; 
+}
+
+.save-up h2 {
+    margin-top: 10px; 
+    font-size: 1.8rem;
 }
 footer{
     background-color: rgba(19, 19, 24, 0.05);
@@ -365,5 +394,20 @@ footer hr{
     }
     .newsletter-subtitle{
         font-size: 0.8rem;
+    }
+    .save-up{
+        width: 214px;
+        height: 79px;
+        border-radius: 8px;
+        bottom: 45px;
+    }
+    .save-up h5 {
+        margin-top: 14px;
+        font-size: 0.8rem; 
+    }
+    
+    .save-up h2 {
+        margin-top: 2px; 
+        font-size: 1.2rem;
     }
 }
