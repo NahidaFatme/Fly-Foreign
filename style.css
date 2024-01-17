@@ -169,7 +169,54 @@ span{
     object-fit: cover;
     clip-path: inset(0 round 10px);
 }
-
+.newsletter{
+    display: flex;
+    gap: 50px;
+}
+.newsletter-content{
+    border: 1px #FF5400 solid;
+    border-radius: 16px;
+    padding: 40px;
+    
+}
+#newsletter-title{
+    margin: 0px;
+    font-size: 1.5rem;
+}
+.newsletter-subtitle{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+.newsletter-hr{
+    margin-bottom: 24px;
+}
+.newsletter input{
+    background-color: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px 0;
+    padding-left: 16px;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.newsletter-image{
+    text-align: right;
+}
+#newsletter-button{
+    margin-top: 8px;
+}
 footer{
     background-color: rgba(19, 19, 24, 0.05);
     width: 100%;
@@ -229,6 +276,10 @@ footer hr{
     }
     .popular-tour-content{
         width: 100%;
+    }
+    .newsletter-image img{
+        width: 100%;
+        height: 420px
     }
 }
 @media screen and (max-width: 600px) {
@@ -299,5 +350,20 @@ footer hr{
     #bottom-logo img{
         width: 32px;
         height: 32px;
+    }
+    .newsletter{
+        flex-direction: column;
+    }
+    .newsletter-image img{
+        width: 100%;
+    }
+    .newsletter-content{
+        padding: 24px;
+    }
+    #newsletter-title{
+        font-size: 1.25rem;
+    }
+    .newsletter-subtitle{
+        font-size: 0.8rem;
     }
 }
